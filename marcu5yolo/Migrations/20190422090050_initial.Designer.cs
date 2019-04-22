@@ -9,7 +9,7 @@ using marcu5yolo.Models;
 namespace marcu5yolo.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20190421120039_initial")]
+    [Migration("20190422090050_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
