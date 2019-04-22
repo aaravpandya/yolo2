@@ -1,0 +1,21 @@
+﻿@model ImageViewModel
+@{
+    ViewData["Title"] = "imageResult";
+    string s = "data:image; base64,";
+}
+
+
+@foreach (ImageViewModel i in ViewBag.images)
+{
+<div class="row">
+    <img src="@i.image1" style="height:240px; width:320px;" align="left"/>
+    <p class="display-4">+</p>
+    <img src="@i.image2" style="height:240px; width:320px;" align="middle"/>
+    <p class="display-4">=</p>
+    @if(i.result != null)
+    {
+    <img src="@i.result" style="height:240px; width:320px;" align="right"/>
+    }
+</div>
+   <br />
+}
